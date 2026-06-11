@@ -3,6 +3,17 @@ local options = {
     lua = { "stylua" },
     css = { "prettier" },
     html = { "prettier" },
+    typst = { "typstyle" },
+    rust = { "rustfmt" },
+    astro = { "prettier" },
+    markdown = { "prettier" },
+    javascript = { "prettier" },
+    typescript = { "prettier" },
+    javascriptreact = { "prettier" },
+    typescriptreact = { "prettier" },
+    yaml = { "prettier" },
+    sh = { "shfmt" },
+    zsh = { "shfmt" },
   },
 
   format_on_save = {

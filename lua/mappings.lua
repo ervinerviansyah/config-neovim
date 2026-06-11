@@ -48,3 +48,15 @@ vim.keymap.set("n", "<leader>tp", require("triforce").show_profile, { desc = "Sh
 
 -- Keymap Plugin Lazygit
 vim.keymap.set("n", "<leader>gg", "<cmd>LazyGit<cr>", { desc = "Toggle LazyGit", silent = true })
+
+-- Keymap Plugin Todo
+map("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find TODOs with Telescope" })
+map("n", "]t", function()
+  require("todo-comments").jump_next()
+end, { desc = "Next TODO comment" })
+map("n", "[t", function()
+  require("todo-comments").jump_prev()
+end, { desc = "Previous TODO comment" })
+
+-- Keymap Plugin Project
+map("n", "<leader>fp", "<cmd>Telescope projects<cr>", { desc = "Find Projects" })

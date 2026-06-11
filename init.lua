@@ -35,3 +35,16 @@ require "autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+vim.filetype.add {
+  extension = {
+    astro = "astro",
+    mdx = "markdown",
+    postcss = "css",
+    env = "sh",
+  },
+  filename = {
+    [".env"] = "sh",
+    ["vcl.conf"] = "vcl",
+  },
+}
