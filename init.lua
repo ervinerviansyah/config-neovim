@@ -48,3 +48,6 @@ vim.filetype.add {
     ["vcl.conf"] = "vcl",
   },
 }
+
+-- Vim Deprecate
+vim.deprecate = function() end
