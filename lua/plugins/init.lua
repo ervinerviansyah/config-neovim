@@ -214,7 +214,7 @@ return {
   -- Plugin Linter
   {
     "nvimtools/none-ls.nvim",
-    ft = { "markdown" },
+    ft = { "markdown", "sh", "bash", "yaml" },
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
       local null_ls = require "null-ls"
