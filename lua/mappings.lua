@@ -60,3 +60,7 @@ end, { desc = "Previous TODO comment" })
 
 -- Keymap Plugin Project
 map("n", "<leader>fp", "<cmd>Telescope projects<cr>", { desc = "Find Projects" })
+
+-- Keymap Lazyjj
+map("n", "<leader>jj", "<cmd>LazyJJ<cr>", { desc = "Git (Jujutsu): Open lazyjj" })
+map("n", "<leader>jf", "<cmd>LazyJJCurrentFile<cr>", { desc = "Git (Jujutsu): lazyjj current file" })

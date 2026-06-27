@@ -279,4 +279,18 @@ return {
       require("telescope").load_extension "projects"
     end,
   },
+
+  -- Plugin Lazyjj
+
+  {
+    "swaits/lazyjj.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    cmd = { "LazyJJ", "LazyJJCurrentFile", "LazyJJToggle" },
+    opts = {},
+    config = function(_, opts)
+      require("lazyjj").setup(opts)
+    end,
+  },
 }
