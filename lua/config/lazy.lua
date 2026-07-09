@@ -50,4 +50,8 @@ require("lazy").setup({
       },
     },
   },
+  git = {
+    timeout = 3600,
+    clone_error_rates = false,
+  },
 })
