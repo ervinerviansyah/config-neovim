@@ -1,7 +1,7 @@
 return {
   {
     -- "gisketch/triforce.nvim",
-    "DrKJeff16/triforce.nvim",
+    "gisketch/triforce.nvim",
     dependencies = { "nvzone/volt" },
     opts = {
       -- Enable/disable the entire plugin
